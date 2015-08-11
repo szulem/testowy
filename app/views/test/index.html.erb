@@ -1,0 +1,28 @@
+<h1>Test#index</h1>
+<p>Find me in app/views/test/index.html.erb</p>
+<p>
+	<%= @testowa %>
+</p>
+
+<p>
+	<% @imiona.each do |imie| %>
+	<%= "Witaj #{imie.capitalize} w kursie Ruby on Rails!" %>
+	<br />
+	<% end %>
+</p>
+
+<p>
+	Parametr <b>id</b> = <%= @id %>
+	<br />
+	Parametr <b>strona</b> = <%= @strona + 10 %>
+	<br />
+	Parametr <b>user</b> = <%= @user %>
+</p>
+
+<p>
+	<%= params.inspect %>
+</p>
+
+<p>
+	<%= link_to('Powrót', {:action=>'nawigacja'}) %>
+</p>

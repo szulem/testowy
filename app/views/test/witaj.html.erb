@@ -1,0 +1,30 @@
+<h1>Test#witaj</h1>
+<p>Find me in app/views/test/witaj.html.erb</p>
+<p>Witam!</p>
+
+<p>
+	<% suma = 2 + 2 %>
+
+	Suma = <%= suma %>
+
+	<br />
+
+	<% imie = "Mirek" %>
+	<%= "Witaj #{imie} w kursie Ruby" %>
+</p>
+
+
+<p>
+	<% @id = "Parametr <b>id</b> = " + params[:id] %>
+	<%= @id.html_safe %>
+
+	<br />
+	Parametr <b>strona</b> = <%= params[:strona].to_i + 1 %>
+	<br />
+	Parametr <b>user</b> = <%= params[:user] %>
+</p>
+
+
+<p>
+	<%= link_to('Powrót', {:action=>'nawigacja'}) %>
+</p>
